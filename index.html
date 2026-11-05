@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conecta Tech - Inscrições</title>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <header class="topo">
+      <a href="#" class="marca">✦ Conecta<span>Tech</span></a>
+      <button id="botaoTema" class="botao-tema" type="button">
+        🌙 Modo escuro
+      </button>
+    </header>
+
+    <main class="container">
+      <section class="apresentacao">
+        <span class="etiqueta">ENCONTRO DE TECNOLOGIA</span>
+        <h1>
+          Ideias que conectam.<br />
+          <span>Conhecimento que transforma.</span>
+        </h1>
+        <p>
+          Um encontro para compartilhar experiências, aprender algo novo e
+          conhecer pessoas da comunidade tech.
+        </p>
+        <div class="detalhes">
+          <span>📅 21 de novembro</span>
+          <span>📍 Evento online e gratuito</span>
+        </div>
+      </section>
+
+      <section class="conteudo">
+        <form id="formInscricao" class="painel formulario">
+          <div class="titulo-painel">
+            <span class="numero">01</span>
+            <div>
+              <h2>Faça sua inscrição</h2>
+              <p>Preencha seus dados para participar.</p>
+            </div>
+          </div>
+          <label for="nome">Nome</label>
+          <input type="text" id="nome" name="nome" placeholder="Digite seu nome" required />
+          <label for="email">E-mail</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="voce@exemplo.com"
+            required
+          />
+          <small id="mensagemEmail"> Informe um e-mail para contato. </small>
+          <label for="area">Área de interesse</label>
+          <select id="area" name="area" required>
+            <option value="">Selecione uma área</option>
+            <option value="Front-end">Desenvolvimento Front-end</option>
+            <option value="Back-end">Desenvolvimento Back-end</option>
+            <option value="Dados">Dados</option>
+            <option value="UX/UI">UX/UI Design</option>
+            <option value="Explorando">Ainda estou explorando</option>
+          </select>
+          <p id="mensagemArea" class="mensagem-area">
+            Escolha uma área de interesse.
+          </p>
+          <button type="submit" class="botao-principal">
+            Confirmar inscrição →
+          </button>
+        </form>
+
+        <section class="painel participantes">
+          <div class="titulo-painel">
+            <span class="numero">02</span>
+            <div>
+              <h2>Quem já está chegando?</h2>
+              <p>Confira as pessoas inscritas no evento.</p>
+            </div>
+          </div>
+          <div class="resumo">
+            <strong id="contador">0</strong>
+            <span>inscrições confirmadas</span>
+          </div>
+          <div id="listaParticipantes" class="grade-participantes">
+          </div>
+        </section>
+      </section>
+      <footer>Conecta Tech • Aprender, compartilhar e construir.</footer>
+    </main>
+  </body>
+</html>
