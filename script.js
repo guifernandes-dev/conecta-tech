@@ -122,8 +122,8 @@ function criaCartao(inscrito) {
   const nome = document.createElement("h3");
   const area = document.createElement("p");
 
-  nome.textContent = `${inscrito.nome}`;
-  area.textContent = `${inscrito.area}`;
+  nome.textContent = inscrito.nome;
+  area.textContent = inscrito.area;
 
   card.classList.add("participante-card");
   area.classList.add("area-card");
