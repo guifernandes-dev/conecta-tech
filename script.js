@@ -118,20 +118,20 @@ form.addEventListener("submit", (event) => {
 
 // g) Adicione os elementos criados ao cartão com appendChild().
 function criaCartao(inscrito) {
-  const article = document.createElement("article");
+  const card = document.createElement("article");
   const nome = document.createElement("h3");
   const area = document.createElement("p");
 
   nome.textContent = `${inscrito.nome}`;
   area.textContent = `${inscrito.area}`;
 
-  article.classList.add("participante-card");
+  card.classList.add("participante-card");
   area.classList.add("area-card");
 
-  article.appendChild(nome);
-  article.appendChild(area);
+  card.appendChild(nome);
+  card.appendChild(area);
 
-  return article;
+  return card;
 }
 
 // h) Adicione o cartão à lista de participantes.
