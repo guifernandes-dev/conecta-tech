@@ -135,19 +135,16 @@ function criaCartao(inscrito) {
 }
 
 // h) Adicione o cartão à lista de participantes.
+
+// i) Atualize o contador de inscrições usando length.
 function atualizaParticipantes() {
   participantsList.innerHTML = "";
   const inscricoes = recuperaInscritos();
   inscricoes.forEach((inscrito) => {
-    const cartao = criaCartao(inscrito);
-    participantsList.appendChild(cartao);
+    const card = criaCartao(inscrito);
+    participantsList.appendChild(card);
   });
-  atualizaContador(inscricoes.length);
-}
-
-// i) Atualize o contador de inscrições usando length.
-function atualizaContador(numInscricoes) {
-  contador.textContent = numInscricoes;
+  contador.textContent = inscricoes.length;
 }
 
 atualizaParticipantes();
